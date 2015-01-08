@@ -5,3 +5,14 @@
  */
 
 
+$('document').ready(function(){
+    $('.yeah').css('background-color', 'yellow');
+  
+    $('div:last p:nth-child(3)').css('background-color', 'pink');
+    
+    $('p:last').css('color', 'red');
+    
+    $('p:gt(1)').css('border-style', 'solid');
+    
+    $('p:first').css({'background-color':'cyan', 'color':'white'});
+});
