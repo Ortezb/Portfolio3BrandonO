@@ -8,11 +8,30 @@
 $('document').ready(function(){
     $('.yeah').css('background-color', 'yellow');
   
-    $('div:last p:nth-child(3)').css('background-color', 'pink');
+    //$('div:last p:nth-child(3)').css('background-color', 'pink');
     
-    $('p:last').css('color', 'red');
+    //$('p:last').css('color', 'red');
     
-    $('p:gt(1)').css('border-style', 'solid');
+    //$('p:gt(1)').css('border-style', 'solid');
     
-    $('p:first').css({'background-color':'cyan', 'color':'white'});
+    //$('p:first').css({'background-color':'cyan', 'color':'white'});
+    
+    //$('.2').css({'visibility': 'hidden', 'position': 'absolute'});
+    
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    $('h1').bind('click', mouseClick);
 });
+
+function mouseOverMe(){
+    $("h1").html("Hi");
+}
+
+function mouseOutMe(){
+    $('h1').html('Bye');
+}
+
+function mouseClick(){
+    
+    $('p').html('Hi and bye 101.');
+}
