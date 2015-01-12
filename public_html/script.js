@@ -18,10 +18,28 @@ $('document').ready(function(){
     
     //$('.2').css({'visibility': 'hidden', 'position': 'absolute'});
     
-    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
-    $('h1').bind('click', mouseClick);
+    //$('h1').bind('click', mouseClick);
+    
+    $('#replaceWText').bind('click', replaceWText);
+    
+    $('#randPara').bind('click', addAPara);
+    
+    $('#removePara').bind('click', removeAPara);
 });
+
+function removeAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara(){
+    $('#randPara').append('<p>ADDED</p>');
+}
+
+function replaceWText(){
+    $('#replaceWText').text('Replaced!');
+}
 
 function mouseOverMe(){
     $("h1").html("Hi");
