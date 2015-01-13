@@ -8,26 +8,34 @@
 $('document').ready(function(){
     $('.yeah').css('background-color', 'yellow');
   
-    //$('div:last p:nth-child(3)').css('background-color', 'pink');
+    $('div:last p:nth-child(3)').css('background-color', 'pink');
     
-    //$('p:last').css('color', 'red');
+    $('p:last').css('color', 'red');
     
-    //$('p:gt(1)').css('border-style', 'solid');
+    $('p:gt(1)').css('border-style', 'solid');
     
-    //$('p:first').css({'background-color':'cyan', 'color':'white'});
+    $('p:first').css({'background-color':'cyan', 'color':'white'});
     
-    //$('.2').css({'visibility': 'hidden', 'position': 'absolute'});
+    $('.2').css({'visibility': 'hidden', 'position': 'absolute'});
     
-    //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
-    //$('h1').bind('click', mouseClick);
+    $('h1').bind('click', mouseClick);
+    
+    $('#replaceWText').css('color', 'blue');
     
     $('#replaceWText').bind('click', replaceWText);
     
     $('#randPara').bind('click', addAPara);
     
     $('#removePara').bind('click', removeAPara);
+    
+    $('#highlightlogo').bind('click', highlightlogo);
 });
+
+function highlightlogo(){
+    $('h1').effect('highlight', {color: 'red'}, 500);
+}
 
 function removeAPara(){
     $('#randPara p:last').remove();
@@ -38,7 +46,7 @@ function addAPara(){
 }
 
 function replaceWText(){
-    $('#replaceWText').text('Replaced!');
+    $('#replaceWText').text('<h1>Replaced!</h1>');
 }
 
 function mouseOverMe(){
