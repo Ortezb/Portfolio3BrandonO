@@ -14,27 +14,27 @@ $('document').ready(function(){
     
     $('h3').css('background', 'red');
     
-//    $('div:last p:nth-child(3)').css('background-color', 'pink');
+    $('div:last p:nth-child(3)').css('background-color', 'red');
     
-//    $('p:last').css('color', 'red');
+    $('p:last').css('color', 'black');
        
-//    $('p:gt(1)').css('border-style', 'solid');
+    $('p:gt(1)').css('border-style', 'solid');
    
-//    $('p:first').css({'background-color':'cyan', 'color':'white'});
+    $('p:first').css({'background-color':'red', 'color':'black'});
     
-//    $('.2').css({'visibility': 'hidden', 'position': 'absolute'});
+    $('.2').css({'visibility': 'hidden', 'position': 'absolute'});
     
-//    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
-//    $('h1').bind('click', mouseClick);
+    $('h1').bind('click', mouseClick);
    
-//    $('#replaceWText').css('color', 'blue');
+    $('#replaceWText').css('color', 'black');
     
-//    $('#replaceWText').bind('click', replaceWText);
+    $('#replaceWText').bind('click', replaceWText);
    
-//    $('#randPara').bind('click', addAPara);
+    $('#randPara').bind('click', addAPara);
        
-//    $('#removePara').bind('click', removeAPara);
+    $('#removePara').bind('click', removeAPara);
 
      $('#show').css('visibility', 'hidden');
       
@@ -54,26 +54,26 @@ function showThePage(){
     $('#show').hide('puff', {}, 2500);
 }
 
-//function removeAPara(){
-//    $('#randPara p:last').remove();
-//}
+function removeAPara(){
+    $('#randPara p:last').remove();
+}
 
-//function addAPara(){
-//    $('#randPara').append('<p>ADDED</p>');
-//}
+function addAPara(){
+    $('#randPara').append('<p>This is my website.</p>');
+}
 
-//function replaceWText(){
-//    $('#replaceWText').text('<h1>Replaced!</h1>');
-//}
+function replaceWText(){
+    $('#replaceWText').text('My name is Brandon.');
+}
 
-//function mouseOverMe(){
-//    $("h1").html("Hi");
-//}
+function mouseOverMe(){
+    $("h1").html("About");
+}
 
-//function mouseOutMe(){
-//    $('h1').html('Bye');
-//}
+function mouseOutMe(){
+    $('h1').html('Me');
+}
 
-//function mouseClick(){    
-//    $('p').html('Hi and bye 101.');
-//}
+function mouseClick(){    
+    $('p').html('My name is Brandon and this is my website.');
+}
